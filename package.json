@@ -1,0 +1,11 @@
+{
+  "name": "binary-loading-example",
+  "version": "0.1.0",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "~2.3.4",
+    "express": "~4.13.3",
+    "morgan": "~1.6.1",
+    "nodemon": "^1.17.3"
+  }
+}
