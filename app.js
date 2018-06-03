@@ -7,7 +7,7 @@ var bodyParser = require('body-parser');
 app.use(bodyParser.json()); // support json encoded bodies
 app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 
-var port = 3001;
+var port = process.env.PORT || 5000;
 
 app.use(require('morgan')('dev'));
 app.engine('html', require('ejs').renderFile);
@@ -211,4 +211,4 @@ app.get('/download', function (req, res) {
   request.end();
 });
 
-app.listen(process.env.PORT || 5000);
+app.listen(port);
