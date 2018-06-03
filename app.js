@@ -79,6 +79,26 @@ app.get("/ncer/:param", function(req,res){
   }
 })
 
+app.get("/sessional/:param", function(req,res){
+  var param = req.params.param
+
+  if(param === "CS"){
+    res.send("2 May 2018");
+  }
+    if(param === "EC"){
+    res.send("9 May 2018");
+  }
+    if(param === "Mechanical"){
+    res.send("3 May 2018");
+  }
+    if(param === "EE"){
+    res.send("25 April 2018");
+  }
+    if(param === "EEE"){
+    res.send("18 April 2018");
+  }
+})
+
 app.get("/admission/:param", function(req,res){
   var param = req.params.param
 
